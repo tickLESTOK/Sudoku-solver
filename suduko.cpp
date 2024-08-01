@@ -152,5 +152,17 @@ int main()
 						   { 6, 8, 2, 0, 0, 0, 0, 9, 0 } };
 	
 
-	print_grid(grid);
+	    print_grid(grid);
+
+    if (solve_soduko(grid))
+    {
+        cout << "Sudoku solved successfully:" << endl;
+        print_grid(grid);
+    }
+    else
+    {
+        cout << "No solution exists!" << endl;
+    }
+    return 0;
+
 }
